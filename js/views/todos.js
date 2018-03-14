@@ -14,8 +14,8 @@ var app = app || {};
 
     // The DOM events specific to an item.
     events: {
-        'click .toggle': 'toggleCompleted',
         'dblclick label': 'edit',
+        'click .toggle': 'togglecompleted',
         'click .destroy': 'clear',
         'keypress .edit': 'updateOnEnter',
         'blur .edit': 'close'
@@ -82,7 +82,7 @@ var app = app || {};
       if ( e.which === ENTER_KEY ) {
         this.close();
       }
-    }
+    },
 
     // Remove the item, destroy the model from *localStorage* and delete its view.
     clear: function() {
