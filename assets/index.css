@@ -316,7 +316,7 @@ body {
 }
 
 #clear-completed,
-html .clear-completed:active {
+html #clear-completed:active {
 	float: right;
 	position: relative;
 	line-height: 20px;
