@@ -32,6 +32,7 @@ var app = app || {};
       this.listenTo(app.Todos, 'reset', this.addAll);
       this.listenTo(app.Todos, 'change:completed', this.filterOne);
       this.listenTo(app.Todos,'filter', this.filterAll);
+      // Callbacks bound to the special "all" event will be triggered when any event occurs
       this.listenTo(app.Todos, 'all', this.render);
 
       app.Todos.fetch();
